@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выберите подходящий тарифный план</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Styles -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="loader">
+    <div class="loader__block"></div>
+    <div class="loader__block"></div>
+    <div class="loader__block"></div>
+  </div>
+  <header class="header">
+    <div class="wrapper">
+      <p>Скидка действует:</p>
+      <div class="timer">
+        <div class="timer__number">
+          <span id="minutes">09</span>
+          <span class="timer__text">минут</span>
+        </div>
+        <div class="timer__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5" height="15" viewBox="0 0 5 15" fill="none">
+            <g opacity="0.5">
+              <circle cx="2.50366" cy="2.5" r="2.5" fill="currentColor" />
+              <circle cx="2.5" cy="12.5" r="2.5" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
+        <div class="timer__number">
+          <span id="seconds">59</span>
+          <span class="timer__text">секунд</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section class="tariff">
+        <h1 class="title title--lg">Выберите подходящий тарифный план</h1>
+        <div class="tariff__container">
+          <div class="tariff__img">
+            <img src="img/img.png" srcset="img/img@2x.png" width="434" height="715" alt="Изображение мужчины">
+          </div>
+          <div class="tariff__block">
+            <ul class="cards">
+              <li class="cards__card">
+                <div class="card">
+                  <input type="radio" name="sale" value="1-week" id="1-week" class="visually-hidden" checked>
+                  <div class="card__wrapper">
+                    <h2 class="card__title">1 неделя</h2>
+                    <span class="card__sale sale">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                        <path
+                          d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                          fill="currentColor" />
+                      </svg>
+                      -30%</span>
+                    <p class="card__price">
+                      <span class="card__price-new">699₽</span>
+                      <span class="card__price-old">999₽</span>
+                    </p>
+                    <p class="card__description">Чтобы просто начать&nbsp;👍🏻</p>
+                    <label for="1-week" class="card__label"></label>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="card">
+                  <input type="radio" name="sale" value="1-month" id="1-month" class="visually-hidden">
+                  <div class="card__wrapper">
+                    <h2 class="card__title">1 месяц</h2>
+                    <span class="card__sale sale">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                        <path
+                          d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                          fill="currentColor" />
+                      </svg>
+                      -40%</span>
+                    <p class="card__price">
+                      <span class="card__price-new">999₽</span>
+                      <span class="card__price-old">1690₽</span>
+                    </p>
+                    <p class="card__description">Привести тело в&nbsp;порядок&nbsp;💪🏻</p>
+                    <label for="1-month" class="card__label"></label>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="card">
+                  <input type="radio" name="sale" value="3-months" id="3-months" class="visually-hidden">
+                  <div class="card__wrapper">
+                    <h2 class="card__title">3 месяца</h2>
+                    <span class="card__sale sale">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                        <path
+                          d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                          fill="currentColor" />
+                      </svg>
+                      -50%</span>
+                    <p class="card__price">
+                      <span class="card__price-new">2990₽</span>
+                      <span class="card__price-old">5990₽</span>
+                    </p>
+                    <p class="card__description">Изменить образ&nbsp;жизни&nbsp;🔥</p>
+                    <label for="3-months" class="card__label"></label>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__card cards__card--grow">
+                <div class="card card--horizontal">
+                  <input type="radio" name="sale" value="forever" id="forever" class="visually-hidden">
+                  <div class="card__wrapper">
+                    <h2 class="card__title">Навсегда</h2>
+                    <span class="card__sale sale">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                        <path
+                          d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                          fill="currentColor" />
+                      </svg>
+                      -70%</span>
+                    <p class="card__price">
+                      <span class="card__price-new">5990₽</span>
+                      <span class="card__price-old">18&nbsp;990₽</span>
+                    </p>
+                    <p class="card__description">Всегда быть в&nbsp;форме<span class="hidden-mobile">
+                        и&nbsp;поддерживать своё здоровье&nbsp;</span>⭐️
+                    </p>
+                    <label for="forever" class="card__label"></label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="tariff__text">Следуя плану на&nbsp;3&nbsp;месяца, люди получают в&nbsp;2&nbsp;раза лучший
+              результат, чем за&nbsp;1&nbsp;месяц</p>
+            <div class="tariff__agreement">
+              <label for="agreement" class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked>
+                <span class="checkbox__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                    <path d="M1 6.75789L5.56923 10.8L14.2 1.2" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="checkbox__text">Я&nbsp;соглашаюсь с&nbsp;<a href="#" class="link">Правилами сервиса</a>
+                  и&nbsp;условиями <a href="#" class="link">Публичной оферты.</a></span>
+              </label>
+            </div>
+            <button class="tariff__btn btn btn--lg" type="button">Купить</button>
+            <p class="tariff__text tariff__text--sm hidden-mobile">Нажимая «Купить», Пользователь соглашается
+              на&nbsp;автоматическое
+              списание
+              денежных средств по&nbsp;истечению купленного периода. Дальнейшие списания по&nbsp;тарифам участвующим
+              в&nbsp;акции
+              осуществляются по&nbsp;полной стоимости согласно оферте.</p>
+            <div class="modal">
+              <div class="modal__overlay"></div>
+              <div class="modal__wrapper">
+                <button type="button" class="modal__close-btn" aria-label="Закрыть модалку">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="modal__label">горящее предложение</div>
+                <h2 class="title">Не&nbsp;упусти свой <span class="highlight">последний шанс</span></h2>
+                <p class="modal__text modal__text--center">Мы знаем, как трудно начать.. <b>Поэтому!</b></p>
+                <p class="modal__text modal__text--center modal__text--border">
+                  <b>Дарим скидку для&nbsp;<span class="highlight">лёгкого старта</span></b> 🏃‍♂️</p>
+                <p class="modal__text">Посмотри, что&nbsp;мы&nbsp;для&nbsp;тебя приготовили 🔥</p>
+                <ul class="cards cards--alt">
+                  <li class="cards__card">
+                    <div class="card card--alt">
+                      <input type="radio" name="last-sale" value="1-week-alt" id="1-week-alt" class="visually-hidden">
+                      <div class="card__wrapper">
+                        <h3 class="card__title">1 неделя</h3>
+                        <div class="card__price">
+                          <span class="card__price-old">999₽</span>
+                          <div class="card__block">
+                            <span class="card__price-new">599₽
+                            </span>
+                            <span class="card__sale sale">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47"
+                                fill="none">
+                                <path
+                                  d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                                  fill="currentColor" />
+                              </svg>
+                              -60%</span></div>
+                        </div>
+                        <div class="card__radio"></div>
+                        <label for="1-week-alt" class="card__label"></label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards__card">
+                    <div class="card card--alt">
+                      <input type="radio" name="last-sale" value="1-month-alt" id="1-month-alt" class="visually-hidden"
+                        checked>
+                      <div class="card__wrapper">
+                        <h3 class="card__title">1 Месяц</h3>
+                        <div class="card__price">
+                          <span class="card__price-old">1690₽</span>
+                          <div class="card__block">
+                            <span class="card__price-new">799₽
+                            </span>
+                            <span class="card__sale sale">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47"
+                                fill="none">
+                                <path
+                                  d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                                  fill="currentColor" />
+                              </svg>
+                              -50%</span>
+                          </div>
+                        </div>
+                        <div class="card__radio"></div>
+                        <label for="1-month-alt" class="card__label"></label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards__card">
+                    <div class="card card--alt">
+                      <input type="radio" name="last-sale" value="3-months-alt" id="3-months-alt"
+                        class="visually-hidden">
+                      <div class="card__wrapper">
+                        <h3 class="card__title">3 месяца</h3>
+                        <div class="card__price">
+                          <span class="card__price-old">5990₽</span>
+                          <div class="card__block">
+                            <span class="card__price-new">799₽
+                            </span>
+                            <span class="card__sale sale">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47"
+                                fill="none">
+                                <path
+                                  d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"
+                                  fill="currentColor" />
+                              </svg>
+                              -60%
+                            </span>
+                          </div>
+                        </div>
+                        <div class="card__radio"></div>
+                        <label for="3-months-alt" class="card__label"></label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <button class="modal__btn btn" type="button">Начать тренироваться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
