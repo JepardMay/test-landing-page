@@ -65,6 +65,8 @@ function setTimer() {
     minutesEl.textContent = ('0' + Math.floor(timer / 60)).slice(-2);
     secondsEl.textContent = ('0' + timer % 60).slice(-2);
     timer--;
+    
+    document.body.removeAttribute('style');
     loader.style.display = 'none';
 
     if (timer < 30) {
@@ -111,10 +113,17 @@ function setData(data) {
 }
 
 async function fetchData() {
-  const response = await fetch("https://t-pay.iqfit.app/subscribe/list-test");
-  const data = await response.json();
-  setData(data);
-  setTimer();
+  document.body.style.overflow = 'hidden';
+  try {
+    const response = await fetch("https://t-pay.iqfit.app/subscribe/list-test");
+    const data = await response.json();
+    setData(data);
+    setTimer();
+  } catch (error) {
+    console.error(`Fetch error: ${error.message}`);
+    document.body.removeAttribute('style');
+    loader.style.display = 'none';
+  }
 }
 
 fetchData();
